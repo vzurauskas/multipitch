@@ -37,3 +37,6 @@ Process questions:
 
 Communication questions:
 1) Kaip padaryt, kad jaustųsi patraukimai, jei virvėje slackas?
+
+### General questions
+1) Verbal + rope communication, or rope only?
