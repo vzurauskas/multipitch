@@ -25,6 +25,7 @@ sequenceDiagram
 
 ### Communication
 
+Prieš kiekvieną virvės signalą, signalizuojantis įtempia virvę.
 | Verbal        | After         | Rope      |
 | ------------- | ------------- | ---------- |
 | Savisauga     | --            | 3 patraukimai, 5 sec, 3 patraukimai. |
