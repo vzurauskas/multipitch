@@ -9,9 +9,10 @@ sequenceDiagram
     Leader ->> Leader: Sutraukia virvę (per atotampą) kol traukiasi.
     Leader ->> Second: Savisauga!
     Leader ->> Leader: Atpalaiduoja virvę.
+    Leader ->> Leader: Pastato saugą (dar be virvės).
     Second ->> Second: Išsega virvę iš reverso.
     Second ->> Leader: Saugos nėra!
-    Leader ->> Leader: Pastato saugą (su autoblock).
+    Leader ->> Leader: Įsega virvę į saugą ir patestuoja autoblock.
     Leader ->> Leader: Sutraukia likusią virvę iki įtempimo.
     Leader ->> Second: Sauga yra!
     Second ->> Second: Išrenka stotį.
