@@ -9,10 +9,9 @@ sequenceDiagram
     Leader ->> Leader: Sutraukia virvę (per atotampą) kol traukiasi.
     Leader ->> Second: Savisauga!
     Leader ->> Leader: Atpalaiduoja virvę.
-    Leader ->> Leader: Pastato saugą (dar be virvės).
     Second ->> Second: Išsega virvę iš reverso.
     Second ->> Leader: Saugos nėra!
-    Leader ->> Leader: Įsega virvę į saugą ir patestuoja autoblock.
+    Leader ->> Leader: astato saugą ir patestuoja autoblock.
     Leader ->> Leader: Sutraukia likusią virvę iki įtempimo.
     Leader ->> Second: Sauga yra!
     Second ->> Second: Išrenka stotį.
@@ -45,5 +44,17 @@ Užlipęs iki stoties boltų, leaderis:
 1) Įsega karabiną į kitą boltą, ir abi savisaugas į jį.
 2) Įsega piemens mazgą į atotampą (for redundancy).
 3) [Pastato stotį](https://www.wallrat.com/PDF_Files/Anchoring.pdf). Statant teks trumpam atidaryti karabiną, kuriame savisaugos, ir išsegti atotampą, kurioje piemens mazgas, bet viskas ok, nes abiem atvejais dar yra kitas taškas.
-4) Išsega savisaugas iš bolto karabino ir įsega į stoties žiedą.
 
+### Part II.
+1) Įsega abi savisaugas į stoties žiedą.
+
+
+## Saugos paruošimas saugoti atlipantį į stotį iš apačios
+1) Jei atotampoje piemens mazgas, išriša jį.
+2) Traukia virvę per atotampą (kad būtų lengviau).
+3) Kai virvė baigiasi, signalizuoja "savisauga" ir atpalaiduoja virvę, kad apatinis galėtų išsisegti reversą.
+4) Kai gauna signalą "saugos nėra", nusiima reversą nuo apraišų.
+5) Įsega reversą į papildomą karabiną su autoblock, o tą karabiną į stoties karabiną.
+6) Įsega virvę į reversą per reverso karabiną.
+7) Patestuoja autoblock.
+8) Signalizuoja "sauga yra".
