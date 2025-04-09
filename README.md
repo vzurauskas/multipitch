@@ -8,9 +8,9 @@ sequenceDiagram
     Leader ->> Leader: Pastato stotį.
     Leader ->> Leader: Sutraukia virvę (per atotampą) kol traukiasi.
     Leader ->> Second: Savisauga!
+    Leader ->> Leader: Atpalaiduoja virvę.
     Second ->> Second: Išsega virvę iš reverso.
     Second ->> Leader: Saugos nėra!
-    Leader ->> Leader: Laukia 30 sec, tada lėtai pradeda traukti virvę.
     Leader ->> Leader: Pastato saugą (su autoblock).
     Leader ->> Leader: Sutraukia likusią virvę iki įtempimo.
     Leader ->> Second: Sauga yra!
@@ -28,7 +28,7 @@ sequenceDiagram
 | Verbal        | After         | Rope      |
 | ------------- | ------------- | ---------- |
 | Savisauga     | --            | 3 patraukimai, 5 sec, 3 patraukimai. |
-| Saugos nėra   | Savisauga     | --            |
+| Saugos nėra   | Savisauga     | 3 patraukimai   |
 | Sauga yra     | Saugos nėra   | 3 patraukimai   |
 | Lipu          | Sauga yra     | 3 patraukimai    |
 
