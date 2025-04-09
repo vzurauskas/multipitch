@@ -7,19 +7,14 @@ sequenceDiagram
     Leader ->> Leader: Įsisega savisaugą.
     Leader ->> Leader: Pastato stotį.
     Leader ->> Leader: Sutraukia virvę (per atotampą) kol traukiasi.
-    Second ->> Leader: ? (1)
-    Leader ->> Second: Gali išsisegt! (2)
-    Second -->> Leader: Supratau!
+    Leader ->> Second: Savisauga!
     Second ->> Second: Išsega virvę iš reverso.
     Second ->> Leader: Saugos nėra!
-    Leader -->> Second: Supratau!
     Leader ->> Leader: Pastato saugą (su autoblock).
     Leader ->> Leader: Sutraukia likusią virvę iki įtempimo.
     Leader ->> Second: Sauga yra!
-    Second -->> Leader: Supratau!
     Second ->> Second: Išrenka stotį.
     Second ->> Leader: Lipu!
-    Leader -->> Second: Supratau!
     Second ->> Second: Užlipa iki stoties.
     Leader ->> Leader: Knisasi stoty.
     Second ->> Second: Knisasi stoty.
