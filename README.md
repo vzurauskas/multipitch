@@ -17,9 +17,9 @@ sequenceDiagram
     Second ->> Second: Išrenka stotį.
     Second ->> Leader: Lipu!
     Second ->> Second: Užlipa iki stoties.
-    Leader ->> Leader: Knisasi stoty.
     Second ->> Second: Knisasi stoty.
-    Leader ->> Leader: Lipa kitą pitchą.
+    Leader ->> Leader: Knisasi stoty.
+    Second ->> Second: Lipa kitą pitchą.
     
 ```
 
