@@ -11,7 +11,7 @@ sequenceDiagram
     Leader ->> Leader: Atpalaiduoja virvę.
     Second ->> Second: Išsega virvę iš reverso.
     Second ->> Leader: Saugos nėra!
-    Leader ->> Leader: astato saugą ir patestuoja autoblock.
+    Leader ->> Leader: Pastato saugą ir patestuoja autoblock.
     Leader ->> Leader: Sutraukia likusią virvę iki įtempimo.
     Leader ->> Second: Sauga yra!
     Second ->> Second: Išrenka stotį.
@@ -55,6 +55,14 @@ Užlipęs iki stoties boltų, leaderis:
 3) Kai virvė baigiasi, signalizuoja "savisauga" ir atpalaiduoja virvę, kad apatinis galėtų išsisegti reversą.
 4) Kai gauna signalą "saugos nėra", nusiima reversą nuo apraišų.
 5) Įsega reversą į papildomą karabiną su autoblock, o tą karabiną į stoties karabiną.
-6) Įsega virvę į reversą per reverso karabiną.
+6) Išsega virvę iš atotampos ir įsega į reversą per reverso karabiną.
 7) Patestuoja autoblock.
 8) Signalizuoja "sauga yra".
+
+
+## Apsikeitimas ir lipimas toliau
+1) Followeris atlipa ir įsisega abi savisaugas į stoties žiedą/karabiną toje pusėje, į kurią lips toliau (stoty esantis turi parodyti).
+2) Leaderis išsega reversą.
+3) Perduoda (ir sumatuoja?) virvę.
+4) Leaderis tampa followeriu ir saugotoju, ir įsisega reversą į save.
+5) Naujas lyderis įsega savo virvę į karabiną, ir tą karabiną arba į stotį, arbą į stoties boltą, kad jei kristų, jėga eitų į tą tašką, o ne į saugotoją.
