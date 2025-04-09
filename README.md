@@ -10,6 +10,7 @@ sequenceDiagram
     Leader ->> Second: Savisauga!
     Second ->> Second: Išsega virvę iš reverso.
     Second ->> Leader: Saugos nėra!
+    Leader ->> Leader: Laukia 30 sec, tada lėtai pradeda traukti virvę.
     Leader ->> Leader: Pastato saugą (su autoblock).
     Leader ->> Leader: Sutraukia likusią virvę iki įtempimo.
     Leader ->> Second: Sauga yra!
@@ -21,23 +22,13 @@ sequenceDiagram
     Leader ->> Leader: Lipa kitą pitchą.
     
 ```
-Process questions:
-1) Angliškai: "That's me!" Kaip lietuviškai?
-2) Ar "Savisauga!" ?
 
 ### Communication
 
-| Verbal                    | After         | Rope      |
-| -------------             | ------------- | ---------- |
-| That's me                 | --            | ?            |
-| Savisauga / Gali išsisegt | --            | 3 patraukimai, 5 sec, 3 patraukimai. (1) |
-| Supratau                  | --            | ?            |
-| Saugos nėra               | Savisauga     | ?            |
-| Sauga yra                 | Saugos nėra   | 3 patraukimai   |
-| Lipu                      | Sauga yra     | 3 patraukimai    |
+| Verbal        | After         | Rope      |
+| ------------- | ------------- | ---------- |
+| Savisauga     | --            | 3 patraukimai, 5 sec, 3 patraukimai. |
+| Saugos nėra   | Savisauga     | --            |
+| Sauga yra     | Saugos nėra   | 3 patraukimai   |
+| Lipu          | Sauga yra     | 3 patraukimai    |
 
-Communication questions:
-1) Kaip padaryt, kad jaustųsi patraukimai, jei virvėje slackas?
-
-### General questions
-1) Verbal + rope communication, or rope only?
