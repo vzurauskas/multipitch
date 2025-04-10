@@ -6,6 +6,7 @@
     - [Saugos paruošimas saugoti atlipantį į stotį iš apačios](#saugos-paruošimas-saugoti-atlipantį-į-stotį-iš-apačios)
     - [Apsikeitimas ir lipimas toliau](#apsikeitimas-ir-lipimas-toliau)
 - [Mazgai](#mazgai)
+- [Technikos](#technikos)
 
 ## High level process
 ```mermaid
@@ -75,3 +76,14 @@ Užlipęs iki stoties boltų, leaderis:
 5) Naujas lyderis įsega savo virvę į karabiną, ir tą karabiną arba į stotį, arbą į stoties boltą, kad jei kristų, jėga eitų į tą tašką, o ne į saugotoją.
 
 ## Mazgai
+- Piemens mazgas (clove hitch)
+- Stoties aštunkė (double eight on a bight)
+- Double fisherman knot
+
+## Technikos
+- Stotys
+    - Kompensuojanti
+    - Dviguba aštunkė
+- Saugojimas per stotį su autobloku
+- Rope management stoty
+- Nusileidimas per dvigubą virvę
